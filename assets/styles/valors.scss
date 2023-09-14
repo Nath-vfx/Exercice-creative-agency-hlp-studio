@@ -1,0 +1,49 @@
+.valors {
+    background-color: #252525;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    h2, h4, p {
+        color: #fff;
+    }
+    .paragraphe {
+        h2, h3, p {
+            text-align: center;
+            width: 33%;
+            margin: 0 auto;
+        }
+        margin-bottom: 80px;
+    }
+    &-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 1rem;
+        margin: 0 20%;
+        &-item {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            justify-content: space-between;
+            align-items: center;
+            width: 280px;
+            height: auto;
+            &:not(:last-child) {
+                border-right: #fff solid 1px;
+            }
+            &-icon {
+                width: 80px;
+                height: 80px;
+                background-color: #79BEC2;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 100%;
+                margin-bottom: 40px;
+            }
+            h4 {
+                font-family: 'Lato', sans-serif;
+                text-transform: uppercase;
+                font-weight: 700;
+            }
+        }   
+    }
+}

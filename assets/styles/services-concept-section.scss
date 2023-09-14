@@ -1,0 +1,96 @@
+//Services grid
+
+ .main__services {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    
+    &-service {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 40px;
+        border-bottom: 1px solid #C6C6C6;
+        margin-top: 3px;
+        img {
+            margin-bottom: 40px;
+        }
+    }
+    &-service:not(:nth-child(4)) {
+        border-right: 1px solid #C6C6C6;
+    }
+
+    &-cta {
+        background-color: #252525;
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    p {
+        text-transform: uppercase;
+        font-family: 'Bricolage Grotesque', sans-serif;
+        font-weight: 900;
+        font-size: 14px;
+        text-align: center;
+        justify-self: start;
+        max-width: 190px;
+    }
+ }
+
+ .approch {
+     display: grid;
+     grid-template-columns: repeat(5, 1fr);
+     grid-template-rows: 113px 1fr;
+     .fictive {
+            grid-column: 1/4;
+            grid-row: 1;
+            width: 100%;
+            height: auto;
+            border-right: #C6C6C6 solid 1px;
+     }
+    
+    &__our-engagement {
+        grid-column: 1 / 4;
+        grid-row: 2;
+        display: flex;
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+        border-right: #C6C6C6 solid 1px;
+        border-top: #C6C6C6 solid 1px;
+        padding: 5% 5% 10% 20vw;
+        position: relative;
+        .paragraphe-title-span {
+            position: absolute;
+            top: -15px;
+            background-color: #fff;
+            padding: 0 20px;
+            transform: translateX(-20px);
+        }
+        .paragraphe-title {
+            margin-bottom: 40px;
+        }
+    }
+    &__experts-domains {
+        grid-column: 4 / 6;
+        grid-row: 2;
+        border-top: #C6C6C6 solid 1px;
+        padding: 10% 20vw 10% 10%;
+        h3 {
+            text-transform: uppercase;
+            font-family: 'Bricolage Grotesque', sans-serif;
+            font-weight: 200;
+            margin-bottom: 20px;
+        }
+        ul {
+            font-family: 'Lato', sans-serif;
+            font-weight: 400;
+            font-size: 14px;
+            li {
+                line-height: 35px;
+            }
+        }
+    }
+ }

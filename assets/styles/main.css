@@ -1,0 +1,945 @@
+@import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,200;10..48,300;10..48,400;10..48,500;10..48,600;10..48,700;10..48,800&family=Lato:wght@100;300;400;700;900&family=Roboto:wght@100;300;400;500;700;900&display=swap");
+@font-face {
+  font-family: "DT Getai Grotesque Display";
+  src: url("../fonts/DTGetaiGroteskDisplay-Black.otf");
+  font-weight: 900;
+  font-style: normal;
+}
+header {
+  display: flex;
+  flex-direction: column;
+  padding: 25px 5% 0 5%;
+}
+header li {
+  list-style: none;
+}
+header a {
+  color: #fff;
+  text-decoration: none;
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-weight: 900;
+  font-size: 20px;
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .header__nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+header .header__nav ul li {
+  margin: 0 40px;
+}
+header .header__nav ul li a.expandable {
+  position: relative;
+}
+header .header__nav ul li a.expandable::after {
+  content: url("../icons/Bottom-triangle.svg");
+  position: absolute;
+  bottom: 0;
+  right: -22px;
+}
+header .btn {
+  border: solid 2px #fff;
+  display: block;
+  padding: 10px 60px 10px 20px;
+  position: relative;
+}
+header .btn::after {
+  content: url("../icons/top-right-arrow.svg");
+  position: absolute;
+  top: 14px;
+  right: 16px;
+}
+
+.section {
+  background: url("../images/header-background.png") no-repeat border-box;
+  background-size: cover;
+  height: 1144px;
+  width: 100vw;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.main__title {
+  margin: auto;
+  max-width: 60vw;
+  position: absolute;
+  left: 50%;
+  top: 45%;
+  transform: translate(-50%, -50%);
+}
+.main__title h1 {
+  font-size: 120px;
+  line-height: 132.5px;
+  text-align: center;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+  position: relative;
+}
+.main__title h1::before {
+  content: url("../images/papillon.png");
+  position: absolute;
+  top: 27%;
+  left: 3%;
+}
+.main__title h1 span {
+  color: rgba(255, 255, 255, 0);
+  -webkit-text-stroke: 2px rgb(255, 255, 255);
+}
+
+.main__tagline {
+  margin: 0 auto 190px auto;
+  max-width: max-content;
+  position: relative;
+}
+.main__tagline::after {
+  content: "";
+  position: absolute;
+  background-image: url("../icons/Butterfly-x2.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  top: 120%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 35px;
+  height: 35px;
+}
+.main__tagline::before {
+  content: "";
+  position: absolute;
+  background: #fff;
+  width: 2px;
+  height: 154px;
+  transform: translateX(-50%);
+  left: 50%;
+  top: 150%;
+}
+.main__tagline h2 {
+  text-align: center;
+  color: #fff;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.main__services {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+.main__services-service {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  border-bottom: 1px solid #C6C6C6;
+  margin-top: 3px;
+}
+.main__services-service img {
+  margin-bottom: 40px;
+}
+.main__services-service:not(:nth-child(4)) {
+  border-right: 1px solid #C6C6C6;
+}
+.main__services-cta {
+  background-color: #252525;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main__services p {
+  text-transform: uppercase;
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-weight: 900;
+  font-size: 14px;
+  text-align: center;
+  justify-self: start;
+  max-width: 190px;
+}
+
+.approch {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 113px 1fr;
+}
+.approch .fictive {
+  grid-column: 1/4;
+  grid-row: 1;
+  width: 100%;
+  height: auto;
+  border-right: #C6C6C6 solid 1px;
+}
+.approch__our-engagement {
+  grid-column: 1/4;
+  grid-row: 2;
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  border-right: #C6C6C6 solid 1px;
+  border-top: #C6C6C6 solid 1px;
+  padding: 5% 5% 10% 20vw;
+  position: relative;
+}
+.approch__our-engagement .paragraphe-title-span {
+  position: absolute;
+  top: -15px;
+  background-color: #fff;
+  padding: 0 20px;
+  transform: translateX(-20px);
+}
+.approch__our-engagement .paragraphe-title {
+  margin-bottom: 40px;
+}
+.approch__experts-domains {
+  grid-column: 4/6;
+  grid-row: 2;
+  border-top: #C6C6C6 solid 1px;
+  padding: 10% 20vw 10% 10%;
+}
+.approch__experts-domains h3 {
+  text-transform: uppercase;
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-weight: 200;
+  margin-bottom: 20px;
+}
+.approch__experts-domains ul {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+}
+.approch__experts-domains ul li {
+  line-height: 35px;
+}
+
+.valors {
+  background-color: #252525;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.valors h2, .valors h4, .valors p {
+  color: #fff;
+}
+.valors .paragraphe {
+  margin-bottom: 80px;
+}
+.valors .paragraphe h2, .valors .paragraphe h3, .valors .paragraphe p {
+  text-align: center;
+  width: 33%;
+  margin: 0 auto;
+}
+.valors-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin: 0 20%;
+}
+.valors-list-item {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-between;
+  align-items: center;
+  width: 280px;
+  height: auto;
+}
+.valors-list-item:not(:last-child) {
+  border-right: #fff solid 1px;
+}
+.valors-list-item-icon {
+  width: 80px;
+  height: 80px;
+  background-color: #79BEC2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  margin-bottom: 40px;
+}
+.valors-list-item h4 {
+  font-family: "Lato", sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.projects {
+  padding: 40px 16.66%;
+  margin: 100px 0;
+  border-top: 1px solid #c6c6c6;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.projects .paragraphe .paragraphe-title {
+  margin-bottom: 80px;
+}
+.projects .paragraphe .paragraphe-title-span {
+  position: absolute;
+  top: -14px;
+  background-color: white;
+  right: calc(16.66% - 20px);
+  padding: 0 20px;
+}
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: max-content max-content;
+  gap: 20px;
+}
+.projects-grid-project-img {
+  width: 100%;
+  aspect-ratio: 16/9;
+}
+.projects-grid-project-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.projects-grid-project-content h2 {
+  font-family: "DT Getai Grotesque Display", sans-serif;
+  font-weight: 900;
+  font-size: 30px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+.projects-grid-project-content h2 span {
+  font-family: "Roboto", sans-serif;
+  color: #BDBDBD;
+  font-weight: 200;
+  text-transform: initial;
+}
+.projects-grid-project-content p {
+  font-size: 12px;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+.projects-grid-project-content-categories ul {
+  display: flex;
+  margin-bottom: 20px;
+}
+.projects-grid-project-content-categories ul li {
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  margin: 0 15px 0 0;
+  width: 107px;
+  padding: 6px 0;
+  text-align: center;
+  border-radius: 25px;
+  border: 1px solid #000;
+}
+.projects-cta {
+  width: 361px;
+  height: 45px;
+  background-color: #79BEC2;
+  color: white;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  margin: 60px auto 0 auto;
+  border: none;
+}
+.projects-cta::after {
+  content: url("../icons/right-arrow.svg");
+  position: absolute;
+  top: 56%;
+  transform: translateY(-50%);
+  right: 60px;
+}
+
+.main__project {
+  grid-column: 1/3;
+  grid-row: 1/2;
+}
+
+.left-side__project {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+
+.right-side__project {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+
+.call-to-action {
+  color: #fff;
+  height: 544px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0 30%;
+  position: relative;
+}
+.call-to-action::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 0;
+}
+.call-to-action h2 {
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-weight: 900;
+  font-size: 40px;
+  margin-bottom: 20px;
+  text-align: center;
+  z-index: 1;
+}
+.call-to-action p {
+  text-align: center;
+  margin-bottom: 60px;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  z-index: 1;
+}
+.call-to-action-button {
+  background-color: #fff;
+  color: #79BEC2;
+  border: none;
+  padding: 12px 50px 12px 20px;
+  position: relative;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+}
+.call-to-action-button::after {
+  content: url("../icons/right-arrow-variant.svg");
+  position: absolute;
+  top: 56%;
+  transform: translateY(-50%);
+  right: 16px;
+}
+
+.number-1 {
+  background: url("../images/HLP_STUDIO_an_image_of_a_beautiful_laptop_in_a_dream_room_75081196-8ba7-475f-ac88-fb4eec3e5aa7 1.png");
+}
+
+.number-2 {
+  background: url("../images/HLP_STUDIO_an_image_in_pov_of_a_beautiful_landscape_93bce134-9c03-4fa3-af49-806be3896296 1.png");
+}
+
+.our-customers {
+  width: 100vw;
+  height: auto;
+  margin: 120px 0;
+}
+.our-customers-list {
+  display: flex;
+  align-items: center;
+  clip-path: inset(0 0 0 0);
+  overflow-x: hidden;
+}
+.our-customers-list li {
+  margin: 0 40px;
+  transform: translateX(-50%);
+  gap: 40px;
+}
+.our-customers-list li a.expandable {
+  position: relative;
+}
+.our-customers-list li a.expandable::after {
+  content: url("../icons/Bottom-triangle.svg");
+  position: absolute;
+  bottom: 0;
+  right: -22px;
+}
+
+.customers-testimonies {
+  background-color: #252525;
+  padding: 127px 0;
+}
+.customers-testimonies .paragraphe {
+  color: white;
+  display: flex;
+  margin: 0 16.66%;
+  flex-direction: row;
+  position: relative;
+  margin-bottom: 80px;
+}
+.customers-testimonies .paragraphe-p {
+  font-size: 14px;
+  font-weight: 400;
+}
+.customers-testimonies .paragraphe-title {
+  margin-bottom: 40px;
+  line-height: 48.5px;
+}
+.customers-testimonies .paragraphe-title-span {
+  position: absolute;
+  top: -40px;
+  padding: 0 20px;
+  transform: translateX(-20px);
+}
+.customers-testimonies .left-box {
+  flex-basis: 100%;
+}
+.customers-testimonies .right-box {
+  flex-basis: 100%;
+}
+.customers-testimonies .right-box p {
+  width: 92%;
+  margin-left: auto;
+}
+.customers-testimonies__customers-types {
+  display: flex;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  margin-left: 24px;
+}
+.customers-testimonies__customers-types li:not(:first-child) {
+  margin-left: 80px;
+}
+.customers-testimonies__customers-types li {
+  position: relative;
+}
+.customers-testimonies__customers-types li::before {
+  content: "";
+  position: absolute;
+  width: 21px;
+  height: 21px;
+  border-radius: 21px;
+  left: -28px;
+  bottom: 2px;
+}
+.customers-testimonies__customers-types-type-1::before {
+  background: #79BEC2;
+}
+.customers-testimonies__customers-types-type-2::before {
+  background: #B53B8E;
+}
+.customers-testimonies__customers-types-type-3::before {
+  background: #8CC279;
+}
+.customers-testimonies-list {
+  display: grid;
+  margin: 0 16.66%;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: max-content;
+  margin-bottom: 80px;
+  position: relative;
+}
+.customers-testimonies-list__card {
+  background-color: white;
+  border-top: #79BEC2 solid 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 413px;
+  height: 591px;
+}
+.customers-testimonies-list__card-logo {
+  width: min-content;
+  margin-top: 30px;
+}
+.customers-testimonies-list__card-title {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-size: 19px;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 40px 120px 20px 120px;
+}
+.customers-testimonies-list__card-p {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: center;
+  margin: 0 76px 60px 80px;
+  line-height: 27.5px;
+}
+.customers-testimonies-list__card-customer {
+  text-align: center;
+  border-top: #252525 solid 0.25px;
+  font-family: "Bricolage Grotesque", sans-serif;
+  text-transform: uppercase;
+  padding: 40px 30px 30px 30px;
+  margin-bottom: 40px;
+}
+.customers-testimonies-list__card-customer-name {
+  font-weight: 700;
+  font-size: 18px;
+}
+.customers-testimonies-list__card-customer-activity {
+  font-weight: 400;
+  font-size: 15px;
+}
+.customers-testimonies-list__navigation {
+  position: absolute;
+  display: flex;
+  background-color: white;
+  width: 304px;
+  height: 78px;
+  bottom: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
+  font-family: "Lato", sans-serif;
+  font-size: 17px;
+  font-weight: 300;
+}
+.customers-testimonies-list__navigation div {
+  padding: 5px;
+  position: relative;
+}
+.customers-testimonies-list__navigation div:nth-child(1)::before {
+  content: url("/assets/icons/left-arrow-black.svg");
+  position: absolute;
+  right: 100px;
+  top: 60%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+.customers-testimonies-list__navigation div:nth-child(2)::after {
+  content: url("/assets/icons/right-arrow-black.svg");
+  position: absolute;
+  left: 100px;
+  top: 60%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+.customers-testimonies-list__navigation .active {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.articles {
+  margin-top: 120px;
+  display: flex;
+  flex-direction: column;
+}
+.articles .paragraphe {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  padding: 40px 16.66%;
+  border-top: 1px solid #c6c6c6;
+}
+.articles .paragraphe-p {
+  font-size: 14px;
+  font-weight: 400;
+}
+.articles .paragraphe-title {
+  margin-bottom: 40px;
+  line-height: 48.5px;
+}
+.articles .paragraphe-title-span {
+  position: absolute;
+  top: -14px;
+  padding: 0 20px;
+  background-color: #fff;
+  transform: translateX(-20px);
+}
+.articles .left-box {
+  flex-basis: 100%;
+}
+.articles .right-box {
+  flex-basis: 100%;
+}
+.articles .right-box p {
+  width: 92%;
+  margin-left: auto;
+}
+.articles__list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: max-content max-content;
+  column-gap: 20px;
+  row-gap: 155px;
+  margin: 0 16.66%;
+  position: relative;
+}
+.articles__list::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: #c6c6c6;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+.articles__list-article {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.articles__list-article .poster {
+  width: 305px;
+  height: 305px;
+}
+.articles__list-article .poster img {
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.articles__list-article .content {
+  display: flex;
+  flex-direction: column;
+  width: 290px;
+}
+.articles__list-article .content-over-title {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  padding: 4px 40px;
+  border: 1px solid black;
+  border-radius: 20px;
+  width: max-content;
+  margin-bottom: 20px;
+}
+.articles__list-article .content-title {
+  font-family: "DT Getai Grotesque Display", sans-serif;
+  font-size: 25px;
+  line-height: 48.5px;
+}
+.articles__list-article .content-text {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 27.5px;
+}
+.articles__list-article .content .cta {
+  color: #79BEC2;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: none;
+  background: none;
+  font-size: 16px;
+  position: relative;
+  width: max-content;
+  margin-bottom: 10px;
+  margin-top: auto;
+}
+.articles__list-article .content .cta::after {
+  content: url("../icons/right-arrow-blue.svg");
+  position: absolute;
+  top: -2px;
+  right: -35px;
+  transform: scale(0.75) rotate(-45deg);
+}
+.articles .projects-cta {
+  margin: 80px auto;
+}
+
+footer {
+  background: linear-gradient(90deg, rgb(181, 59, 142) 0%, rgb(121, 190, 194) 100%);
+  color: white;
+  padding-bottom: 14px;
+}
+footer .footer-legals {
+  background-color: #252525;
+  display: flex;
+  padding: 40px 8.33%;
+  border-top: #C5C5C5 solid 1px;
+  justify-content: space-between;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+}
+footer .footer-legals ul {
+  display: flex;
+}
+footer .footer-legals ul li {
+  margin-right: 12px;
+}
+footer .main-footer {
+  background-color: #252525;
+  display: grid;
+  width: 100vw;
+  grid-template-columns: repeat(6, max-content);
+  column-gap: 6.33%;
+  padding: 0 8.33% 0 8.33%;
+}
+footer .main-footer .slogan {
+  color: #79BEC2;
+  max-width: 306px;
+  position: relative;
+}
+footer .main-footer .slogan::after {
+  content: "";
+  width: 21px;
+  height: 21px;
+  background: #79BEC2;
+  border-radius: 21px;
+  position: absolute;
+  top: 58%;
+  left: 48%;
+}
+footer .main-footer .slogan-text h2 {
+  font-size: 28px;
+  font-family: "Bricolage Grotesque", sans-serif;
+}
+footer .main-footer .contact {
+  border-left: #C5C5C5 1px solid;
+  padding-left: 60px;
+}
+footer .main-footer .contact button {
+  border: solid 2px #79BEC2;
+  background: none;
+  display: block;
+  position: relative;
+  color: #79BEC2;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  padding: 10px 60px 10px 20px;
+  position: relative;
+  margin-bottom: 60px;
+}
+footer .main-footer .contact button::after {
+  content: url("../icons/right-arrow-blue.svg");
+  position: absolute;
+  transform: scale(0.75) translateY(-50%);
+  top: 48%;
+  right: 20px;
+}
+footer .main-footer .contact li {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  margin: 40px 0;
+}
+footer .main-footer .slogan, footer .main-footer .navigation, footer .main-footer .contact {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+footer .main-footer .navigation li {
+  margin-bottom: 12px;
+}
+footer .main-footer .navigation a {
+  text-decoration: none;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+}
+footer .main-footer .navigation h4 {
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  margin-bottom: 38px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+}
+
+h1 {
+  font-family: "DT Getai Grotesque Display", sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.paragraphe-title-span {
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-weight: 900;
+  color: #79BEC2;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.paragraphe-title {
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-weight: 900;
+  font-size: 40px;
+}
+
+.paragraphe-p {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 2;
+}
+
+.to-right {
+  text-align: right;
+}
+
+.btn {
+  background-color: transparent;
+  border: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+.btn--primary {
+  border: solid 2px #fff;
+  display: block;
+  position: relative;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.btn-padding-right-x1 {
+  padding: 10px 40px 10px 20px;
+}
+
+.btn-padding-right-x2 {
+  padding: 10px 40px 10px 20px;
+}
+
+.btn-padding-right-x3 {
+  padding: 10px 60px 10px 20px;
+}
+
+.arrow-top-right::after {
+  content: url("../icons/top-right-arrow.svg");
+  position: absolute;
+  top: 14px;
+  right: 16px;
+}
+
+.arrow-right::after {
+  content: "";
+  background: url("../icons/right-arrow.svg") no-repeat;
+  background-size: 14px 14px;
+  width: 14px;
+  height: 14px;
+  position: absolute;
+  top: 50%;
+  right: 16px;
+  transform: translateY(-50%);
+}
+
+/*# sourceMappingURL=main.css.map */
